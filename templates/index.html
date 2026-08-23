@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meus Jogos Educativos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>🎮 MEUS JOGOS EDUCATIVOS</h1>
+        <p>Feitos em Python + Pygame pelo professor</p>
+    </header>
+
+    <div class="container">
+        {% for jogo in jogos %}
+        <div class="card">
+            <div class="capa">{{ jogo.capa }}</div>
+            <h2>{{ jogo.titulo }}</h2>
+            <span class="tag">{{ jogo.materia }}</span>
+            <p>{{ jogo.desc }}</p>
+            <div class="botoes">
+                <a href="/download/{{ jogo.arquivo }}" class="btn baixar">⬇️ Baixar .py</a>
+                <a href="https://pygame.org" target="_blank" class="btn jogar">Como jogar?</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <footer>
+        <p>Feito com ❤️ em Python | <a href="{{ url_for('sobre') }}">Sobre o projeto</a></p>
+    </footer>
+</body>
+</html>
