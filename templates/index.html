@@ -21,7 +21,7 @@
             <p>{{ jogo.desc }}</p>
             <div class="botoes">
                 <a href="/download/{{ jogo.arquivo }}" class="btn baixar">⬇️ Baixar .py</a>
-                <a href="https://pygame.org" target="_blank" class="btn jogar">Como jogar?</a>
+                <a href="{{ url_for('jogar', jogo_id=jogo.id) }}" class="btn jogar">Jogar no navegador</a>
             </div>
         </div>
         {% endfor %}

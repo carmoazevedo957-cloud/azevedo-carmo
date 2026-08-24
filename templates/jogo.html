@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ jogo.titulo }} | Meus Jogos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="game-page">
+    <main class="game-shell" data-game="{{ jogo.id }}">
+        <a class="back-link" href="{{ url_for('home') }}">← Voltar aos jogos</a>
+        <header class="game-header">
+            <div class="game-icon">{{ jogo.capa }}</div>
+            <div><p class="eyebrow">{{ jogo.materia }}</p><h1>{{ jogo.titulo }}</h1></div>
+        </header>
+        <section id="game-area" class="game-area" aria-live="polite"></section>
+    </main>
+    <script src="{{ url_for('static', filename='games.js') }}"></script>
+</body>
+</html>

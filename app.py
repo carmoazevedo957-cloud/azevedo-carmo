@@ -49,5 +49,13 @@ def sobre():
     return render_template("sobre.html")
 
 
+@app.route("/jogar/<jogo_id>")
+def jogar(jogo_id):
+    jogo = next((item for item in JOGOS if item["id"] == jogo_id), None)
+    if jogo is None:
+        return "Jogo nao encontrado", 404
+    return render_template("jogo.html", jogo=jogo)
+
+
 if __name__ == "__main__":
     app.run(debug=False, host="0.0.0.0", port=5000)
