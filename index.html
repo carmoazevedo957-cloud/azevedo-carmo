@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080b18">
+    <meta name="description" content="Jogos educativos para aprender brincando. Explore atividades de português, matemática e criatividade.">
+    <title>Jogos Educativos — aprender é uma aventura</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Jogos Educativos, início">
+        <span class="brand-mark" aria-hidden="true">J<span>+</span></span>
+        <span>jogos<span class="brand-light">educativos</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#jogos">Jogos</a>
+        <a href="#aventuras">Vídeos</a>
+        <a class="nav-cta" href="#jogos">Explorar agora <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <video class="hero-video" autoplay muted loop playsinline poster="imagens/Designer%20(1).png" aria-hidden="true">
+          <source src="vídeo/Animated_letters_riding_bicycles_20261025184841.mp4" type="video/mp4">
+        </video>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <span class="eyebrow"><span class="status-dot"></span> CONHECIMENTO EM MODO AVENTURA</span>
+          <h1>Aprender pode ser<br>uma <span>grande aventura.</span></h1>
+          <p>Desafios divertidos, novas descobertas e muita imaginação. Escolha seu próximo jogo e venha brincar!</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#jogos">Encontrar meu jogo <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#aventuras"><span class="play-icon" aria-hidden="true">▶</span> Ver vídeos</a>
+          </div>
+          <div class="hero-proof"><div class="avatar-stack" aria-hidden="true"><span>✦</span><span>★</span><span>◉</span></div><span>Aprender, jogar e descobrir<br><strong>tudo no seu ritmo</strong></span></div>
+        </div>
+        <div class="hero-sticker" aria-hidden="true"><span>IDEIAS<br>EM JOGO</span><b>✳</b></div>
+        <a class="scroll-cue" href="#jogos"><span></span> DESÇA PARA DESCOBRIR</a>
+      </section>
+
+      <section class="games-section section-wrap" id="jogos">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow eyebrow-dark">SUA PRÓXIMA MISSÃO</span>
+            <h2>Escolha sua <span>aventura.</span></h2>
+            <p>Jogos educativos para aprender brincando, do seu jeito.</p>
+          </div>
+          <div class="catalog-count"><span class="count-number" id="game-count">08</span><span>jogos<br>disponíveis</span></div>
+        </div>
+
+        <div class="catalog-tools">
+          <div class="filter-list" role="group" aria-label="Filtrar jogos por assunto">
+            <button class="filter-chip is-active" type="button" data-filter="todos" aria-pressed="true">Todos <span>08</span></button>
+            <button class="filter-chip" type="button" data-filter="portugues" aria-pressed="false">Português</button>
+            <button class="filter-chip" type="button" data-filter="matematica" aria-pressed="false">Matemática</button>
+            <button class="filter-chip" type="button" data-filter="criatividade" aria-pressed="false">Criatividade</button>
+          </div>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="visually-hidden">Buscar um jogo</span>
+            <input id="game-search" type="search" placeholder="Buscar um jogo..." autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+        </div>
+
+        <div class="game-grid" id="game-grid">
+          <article class="game-card" data-category="portugues" data-title="A Letra que Falta alfabetização letras">
+            <a class="game-art art-lilac" href="jogo%20exe/A%20Letra%20que%20Falta.exe" download aria-label="Baixar A Letra que Falta">
+              <span class="art-label">PORTUGUÊS</span><img src="imagens/Designer%20(1).png" alt="" loading="lazy"><span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="game-info"><span class="game-number">01 / 08</span><h3>A Letra que Falta</h3><p>Descubra qual letra completa cada palavra.</p><a class="game-link" href="jogo%20exe/A%20Letra%20que%20Falta.exe" download>Baixar jogo <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="game-card" data-category="portugues" data-title="Complete as palavras palavras">
+            <a class="game-art art-peach" href="jogo%20exe/complete_sa_palavras.exe" download aria-label="Baixar Complete as Palavras">
+              <span class="art-label">PORTUGUÊS</span><img src="imagens/Designer%20(2).png" alt="" loading="lazy"><span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="game-info"><span class="game-number">02 / 08</span><h3>Complete as Palavras</h3><p>Pratique a escrita completando palavras.</p><a class="game-link" href="jogo%20exe/complete_sa_palavras.exe" download>Baixar jogo <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="game-card" data-category="portugues" data-title="Jogo das Palavras T ou D português">
+            <a class="game-art art-yellow" href="jogo%20exe/Jogo%20das%20Palavras%20-%20T%20ou%20D.exe" download aria-label="Baixar Jogo das Palavras T ou D">
+              <span class="art-label">PORTUGUÊS</span><img src="imagens/Designer%20(3).png" alt="" loading="lazy"><span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="game-info"><span class="game-number">03 / 08</span><h3>Jogo das Palavras — T ou D</h3><p>Escolha a letra certa e brinque com os sons.</p><a class="game-link" href="jogo%20exe/Jogo%20das%20Palavras%20-%20T%20ou%20D.exe" download>Baixar jogo <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="game-card" data-category="portugues" data-title="Ligue as Palavras associação">
+            <a class="game-art art-blue" href="jogo%20exe/ligue_as_palavras.exe" download aria-label="Baixar Ligue as Palavras">
+              <span class="art-label">PORTUGUÊS</span><img src="imagens/carro%20azul.png" alt="" loading="lazy"><span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="game-info"><span class="game-number">04 / 08</span><h3>Ligue as Palavras</h3><p>Faça conexões e descubra novas palavras.</p><a class="game-link" href="jogo%20exe/ligue_as_palavras.exe" download>Baixar jogo <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="game-card" data-category="matematica" data-title="Helicóptero da Tabuada matemática">
+            <a class="game-art art-sky" href="jogo%20exe/HelicopteroDaTabuada.exe" download aria-label="Baixar Helicóptero da Tabuada">
+              <span class="art-label">MATEMÁTICA</span><img src="imagens/helicoptero%20azul.png" alt="" loading="lazy"><span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="game-info"><span class="game-number">05 / 08</span><h3>Helicóptero da Tabuada</h3><p>Voe pelos desafios e pratique a tabuada.</p><a class="game-link" href="jogo%20exe/HelicopteroDaTabuada.exe" download>Baixar jogo <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="game-card" data-category="matematica" data-title="Salve o Helicóptero desafio">
+            <a class="game-art art-mint" href="jogo%20exe/Salve_o_Helicoptero.exe" download aria-label="Baixar Salve o Helicóptero">
+              <span class="art-label">DESAFIO</span><img src="imagens/helicoptero%20vermelho.png" alt="" loading="lazy"><span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="game-info"><span class="game-number">06 / 08</span><h3>Salve o Helicóptero</h3><p>Parta para uma missão cheia de desafios.</p><a class="game-link" href="jogo%20exe/Salve_o_Helicoptero.exe" download>Baixar jogo <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="game-card" data-category="criatividade" data-title="Vamos Colorir pintura criatividade">
+            <a class="game-art art-coral" href="jogo%20exe/VamosColorir.exe" download aria-label="Baixar Vamos Colorir">
+              <span class="art-label">CRIATIVIDADE</span><img src="imagens/carro%20vermelho.png" alt="" loading="lazy"><span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="game-info"><span class="game-number">07 / 08</span><h3>Vamos Colorir</h3><p>Solte a imaginação e divirta-se colorindo.</p><a class="game-link" href="jogo%20exe/VamosColorir.exe" download>Baixar jogo <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="game-card" data-category="criatividade" data-title="Modo Fantasma aventura">
+            <a class="game-art art-night" href="jogo%20exe/modo%20FANTASMA.exe" download aria-label="Baixar Modo Fantasma">
+              <span class="art-label">AVENTURA</span><img src="imagens/carro%20azul.png" alt="" loading="lazy"><span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="game-info"><span class="game-number">08 / 08</span><h3>Modo Fantasma</h3><p>Entre no modo fantasma e encare a aventura.</p><a class="game-link" href="jogo%20exe/modo%20FANTASMA.exe" download>Baixar jogo <span aria-hidden="true">→</span></a></div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>Nenhum jogo encontrado. Tente outro nome ou filtro.</p>
+      </section>
+
+      <section class="video-section" id="aventuras">
+        <div class="video-inner section-wrap">
+          <div class="section-heading video-heading">
+            <div><span class="eyebrow">UMA PAUSA PARA IMAGINAR</span><h2>Histórias que <span>ganham vida.</span></h2><p>Dê o play e entre no clima das nossas aventuras.</p></div>
+            <span class="video-counter">PLAY <b>▶</b> REPLAY</span>
+          </div>
+          <div class="video-grid">
+            <article class="video-card video-wide">
+              <div class="video-frame"><video controls preload="metadata" playsinline poster="imagens/Designer%20(1).png"><source src="vídeo/Animated_letters_riding_bicycles_20261025184841.mp4" type="video/mp4">Seu navegador não suporta a reprodução de vídeo.</video><span class="video-tag">ANIMAÇÃO</span></div>
+              <div class="video-caption"><span>01 — MUNDO DAS LETRAS</span><h3>Uma pedalada cheia de descobertas</h3></div>
+            </article>
+            <article class="video-card">
+              <div class="video-frame"><video controls preload="metadata" playsinline poster="imagens/helicoptero%20azul.png"><source src="vídeo/Green_helicopter_waving_to_camera_20261022154414.mp4" type="video/mp4">Seu navegador não suporta a reprodução de vídeo.</video><span class="video-tag">AVENTURA</span></div>
+              <div class="video-caption"><span>02 — AMIGOS DO CÉU</span><h3>Um oi lá do alto!</h3></div>
+            </article>
+            <article class="video-card">
+              <div class="video-frame"><video controls preload="metadata" playsinline poster="imagens/Designer%20(3).png"><source src="vídeo/T%20ou%20D.mp4" type="video/mp4">Seu navegador não suporta a reprodução de vídeo.</video><span class="video-tag">JOGO DE PALAVRAS</span></div>
+              <div class="video-caption"><span>03 — DESAFIO RELÂMPAGO</span><h3>Você sabe: T ou D?</h3></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-cta">
+        <div class="closing-orbit" aria-hidden="true">✳</div>
+        <span class="eyebrow">SUA PRÓXIMA DESCOBERTA ESTÁ AQUI</span>
+        <h2>Curiosidade ligada.<br><span>Diversão também.</span></h2>
+        <a class="button button-primary" href="#jogos">Escolher um jogo <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">J<span>+</span></span><span>jogos<span class="brand-light">educativos</span></span></a>
+      <p>Feito para aprender brincando. <span aria-hidden="true">✦</span></p>
+      <a class="back-top" href="#inicio">VOLTAR AO TOPO ↑</a>
+    </footer>
+  </body>
+</html>
