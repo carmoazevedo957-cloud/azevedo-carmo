@@ -5,8 +5,23 @@ const count = document.querySelector('#game-count');
 const emptyState = document.querySelector('#empty-state');
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('#main-nav');
+const visitorCounter = document.querySelector('#visit-counter');
 
 let activeFilter = 'todos';
+
+function updateVisitorCounter() {
+  if (!visitorCounter) return;
+
+  try {
+    const storageKey = 'jogos-educativos-visitas';
+    const currentVisits = Number(localStorage.getItem(storageKey) || 0);
+    const nextVisits = currentVisits + 1;
+    localStorage.setItem(storageKey, String(nextVisits));
+    visitorCounter.textContent = String(nextVisits).padStart(4, '0');
+  } catch (error) {
+    visitorCounter.textContent = '0001';
+  }
+}
 
 function updateGames() {
   const query = search.value.trim().toLocaleLowerCase('pt-BR');
@@ -44,6 +59,8 @@ document.addEventListener('keydown', (event) => {
     search.focus();
   }
 });
+
+updateVisitorCounter();
 
 menuToggle.addEventListener('click', () => {
   const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
